@@ -11,7 +11,7 @@ void SizeOfVariables(void){
 	double d;  
 	long double ld;
 	void *ptr;
-	
+	//prints the bytes of the variables
 	printf("Size of char: %zu bytes\n", sizeof(c));
 	printf("Size of short: %zu bytes\n", sizeof(s));
 	printf("Size of int: %zu bytes\n", sizeof(i));
@@ -83,6 +83,8 @@ void ReverseNumber(long aNumber){
 	int n = aNumber, rev = 0, remainder;
     //printf("Enter an integer: ");
     //scanf("%d", &n);
+	
+	//runs the while loop until n becomes zero and will flip the number
     while (n != 0) {
 		remainder = n % 10;
 		rev = rev * 10 + remainder;
@@ -100,8 +102,13 @@ int main()
     char str[50];   // char array of size 50
 	SizeOfVariables();
 	IsLeapYear(1243);
+	IsLeapYear(2000);
+	IsLeapYear(3456);
+	IsLeapYear(2012);
+	IsLeapYear(2342);
 	IsVowel('b');
-	ReverseNumber(56756);
+	IsVowel('a');
+	ReverseNumber(12345);
     printf("Enter two numbers\n");
     
     // Taking integer as input from user
