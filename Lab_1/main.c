@@ -29,7 +29,11 @@ int IsLeapYear(int aYear){
 	scanf("%d", &year);*/
 
 	// leap year if perfectly divisible by 400
-	if (year % 400 == 0){
+	if (year < 1752){
+		printf("%d is not a leap year.\n", year);
+		return 0;
+	}
+	else if (year % 400 == 0){
 		printf("%d is a leap year.\n", year);
 		return 1;
 	}
