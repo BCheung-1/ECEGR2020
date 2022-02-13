@@ -6,15 +6,15 @@
 ProjectName            :=Lab_3
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=C:/Users/cheun/Documents/ECEGR2020
-ProjectPath            :=C:/Users/cheun/Documents/ECEGR2020/Lab_3
+WorkspacePath          :=C:/Users/Brandon/Documents/ECEGR2020
+ProjectPath            :=C:/Users/Brandon/Documents/ECEGR2020/Lab_3
 IntermediateDirectory  :=../build-$(ConfigurationName)/Lab_3
 OutDir                 :=../build-$(ConfigurationName)/Lab_3
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=cheun
-Date                   :=06/02/2022
+User                   :=Brandon
+Date                   :=12/02/2022
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/Lab_3/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/Lab_3/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/Users/cheun/Documents/ECEGR2020/Lab_3/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "C:/Users/Brandon/Documents/ECEGR2020/Lab_3/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/Lab_3/main.c$(DependSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_3/main.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_3/main.c$(DependSuffix) -MM main.c
 
