@@ -33,17 +33,15 @@ void ReverseArray(void){
 }
 
 void gpaOrganizer(Student** newArray , int num){
-	for (int i = 0; i < num-1; i++){
-		for (int j = 0; j < num-1; j++){
+	for (int i = 0; i < num; i++){
+		for (int j = 0; j < num; j++){
 			if (newArray[i] -> GPA > newArray[j] -> GPA){
-				float a = newArray[i] -> GPA;
-				newArray[i] -> GPA = newArray[j] -> GPA;
-				newArray[j] -> GPA = a; 
+				Student* temp = newArray[i];
+				newArray[i] = newArray[j];
+				newArray[j] = temp;
 			}
 		}
 	}
-	
-	
 }
 
 Student* adding(void){
@@ -57,14 +55,50 @@ Student* adding(void){
 	ptr -> ID = identity;
 	printf("Input firstname \n");
 	scanf("%s", &first);
-	strcpy(first, ptr -> firstName);
+	strcpy(ptr -> firstName,first );
 	printf("Input lastname \n");
 	scanf("%s", &last);
-	strcpy(last, ptr -> lastName);
-	printf("Input grade");
+	strcpy(ptr -> lastName, last);
+	printf("Input grade \n");
 	scanf("%f",&grade);
 	ptr -> GPA = grade;
 	return ptr;
+}
+
+Student** studentInfoFile(void){
+	FILE *gpaFile = fopen("gpaOrganizer.txt", "r");
+	if(gpaFile == NULL){
+		printf("File does not exist\n");
+		return NULL;
+	}
+	int studentNum = 0;
+	fscanf(gpaFile, "%d", &studentNum);
+	char c;
+	for(c = getc(gpaFile); c != EOF; c = getc(gpaFile)){
+		if (c == '\n'){ // Increment count if this character is newline
+			studentNum = studentNum + 1;
+		}
+	}
+	studentNum /= 4;
+	Student **newArray = (Student**)malloc(studentNum * sizeof(Student*));
+	float averageGPA = 0.0;
+	for(int i = 0; i < studentNum; ++i){
+		newArray[i] = (Student*)malloc(sizeof(Student));
+		fscanf(gpaFile, "%d", &(newArray[i] -> ID));
+		fscanf(gpaFile, "%s", (newArray[i] -> firstName));
+		fscanf(gpaFile, "%s", (newArray[i] -> lastName));
+		fscanf(gpaFile, "%f", (newArray[i] -> GPA));
+		
+		printf("Student ID: %d\n", i+1, newArray[i]->ID);
+		printf("Student firstname: %s\n", i+1, newArray[i]->firstName);
+		printf("Student lastname: %s\n", i+1, newArray[i]->lastName);
+		printf("Student GPA: %f\n", i+1, newArray[i]->GPA);
+		
+		averageGPA += newArray[i] -> GPA;
+	}
+	averageGPA /= studentNum;
+	printf("There are %d students and the average GPA is: %f\n", studentNum, averageGPA);
+	return newArray;
 }
 
 int main(int argc, char **argv)
@@ -78,15 +112,19 @@ int main(int argc, char **argv)
 		newArray[i] = adding(); 
 	}
 	gpaOrganizer(newArray,number);
-	return 0;
 	FILE *fp; // uses file io commands to open a new txt that saves the orginal number and reversed number
 	fp = fopen("gpaOrganizer.txt","wt");
-	for (int j = 0; j < number-1; j++){
-		fprintf(fp,"Student ID: %d", newArray -> ID);
-		fprintf(fp,"Student firstname: %s", newArray -> ID);
-		fprintf(fp,"Student lastname: %s", newArray -> ID);
-		fprintf(fp,"Student GPA: %", newArray -> ID);
-		
+	for (int j = 0; j < number; j++){
+		fprintf(fp,"Student ID: %d\n", newArray[j] -> ID);
+		fprintf(fp,"Student firstname: %s\n", newArray[j] ->  firstName);
+		fprintf(fp,"Student lastname: %s\n", newArray[j] ->  lastName);
+		fprintf(fp,"Student GPA: %f\n", newArray[j] ->  GPA);
 	} 
+	fclose(fp);
+	free(newArray);
+	
+	Student **Array = studentInfoFile();
+	free(Array);
+	return 0;
 	
 }
