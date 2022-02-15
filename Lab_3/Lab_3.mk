@@ -14,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=cheun
-Date                   :=13/02/2022
+Date                   :=14/02/2022
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/Lab_3/main.c$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/Lab_3/part2.c$(ObjectSuffix) ../build-$(ConfigurationName)/Lab_3/main.c$(ObjectSuffix) 
 
 
 
@@ -93,6 +93,14 @@ PreBuild:
 ##
 ## Objects
 ##
+../build-$(ConfigurationName)/Lab_3/part2.c$(ObjectSuffix): part2.c ../build-$(ConfigurationName)/Lab_3/part2.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/Users/cheun/Documents/ECEGR2020/Lab_3/part2.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/part2.c$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/Lab_3/part2.c$(DependSuffix): part2.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_3/part2.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_3/part2.c$(DependSuffix) -MM part2.c
+
+../build-$(ConfigurationName)/Lab_3/part2.c$(PreprocessSuffix): part2.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Lab_3/part2.c$(PreprocessSuffix) part2.c
+
 ../build-$(ConfigurationName)/Lab_3/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/Lab_3/main.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "C:/Users/cheun/Documents/ECEGR2020/Lab_3/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/Lab_3/main.c$(DependSuffix): main.c
