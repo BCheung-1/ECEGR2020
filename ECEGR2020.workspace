@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="ECEGR2020" Database="" Version="10000">
+  <Project Name="Lab_3" Path="Lab_3/Lab_3.project" Active="No"/>
+  <Project Name="Lab2" Path="Lab2/Lab2.project" Active="No"/>
+  <Project Name="Lab3DE" Path="Lab3DE/Lab3DE.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug">
+      <Environment/>
+      <Project Name="Lab_3" ConfigName="Debug"/>
+      <Project Name="Lab_3" ConfigName="Debug"/>
+      <Project Name="Lab2" ConfigName="Debug"/>
+      <Project Name="Lab3DE" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release">
+      <Environment/>
+      <Project Name="Lab_3" ConfigName="Release"/>
+      <Project Name="Lab_3" ConfigName="Release"/>
+      <Project Name="Lab2" ConfigName="Release"/>
+      <Project Name="Lab3DE" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

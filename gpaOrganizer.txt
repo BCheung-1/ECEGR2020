@@ -1,0 +1,9 @@
+Number of Student: 2
+Student ID: 321
+Student firstname: Ken
+Student lastname: R
+Student GPA: 4.000000
+Student ID: 123
+Student firstname: Brandon
+Student lastname: C
+Student GPA: 3.500000

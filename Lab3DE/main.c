@@ -67,7 +67,7 @@ int consCount(char *str){
 			count++;
 		}
 	}
-	printf("\nNumber of vowels in the string: %d\n" , count);
+	printf("\nNumber of consonants in the string: %d\n" , count);
 	return count;
 }
 
