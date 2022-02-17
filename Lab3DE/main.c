@@ -5,18 +5,19 @@
 char str[100];
 char option;
 int a = 1;
+char junk;
 
-
-void request(char str[100]){
+void request(char *str){
 	do{
 		printf("Choose your option:\n");
-		scanf("%c", &option);
+		option = getchar();
+		junk = getchar();
 		switch(option){
 			case 'A':
-				printf("\nNumber of vowels in the string: %d" , vowelCount(str));
+				vowelCount(str);
 				break;
 			case 'B': 
-				printf("\nNumber of consonants in the string: %d" , consCount(str));
+				consCount(str);
 				break;
 			case 'C':
 				Upper(str);
@@ -25,73 +26,63 @@ void request(char str[100]){
 				Lower(str);
 				break;
 			case 'E':
-				printf("\n%c", str);
+				printf("%s",str);
 				break;
 			case 'F':
-				printf("Enter the string\n");
-				scanf("%s", str);
+				//printAgain(str);
+				printf("Enter the string: \n");
+				fgets(str, 100, stdin);
 				break;
 			case 'R':
-				
+				printf("Reverse string is: %s\n", strrev(str));
 				break;
 			case 'M':
-				printf("A) Count the number of vowels in the string\n");
-				printf("B) Count the number of consonants in the string\n");
-				printf("C) Convert the string to uppercase\n");
-				printf("D) Convert the string to lowercase\n");
-				printf("E) Display the current string\n");
-				printf("F) Enter another string\n");
-				printf("R) Reverse the string\n\n");
-				printf("M) Display this menu\n");
-				printf("X) Exit the program\n");
+				menu();
 				break;
 			case 'X':
+				--a;
 				break;
 		}
 		
 	}while(a);
 }
 
-int vowelCount(char str[]){
+int vowelCount(char *str){
 	int count = 0;
 	int c = 0;
-	while(str[c] != '\0'){
+	for(c = 0; str[c] != '\0';c++){
 		if(str[c] == 'a' || str[c] == 'A' || str[c] == 'e' || str[c] == 'E' || str[c] == 'i' || str[c] == 'I' || str[c] =='o' || str[c]=='O' || str[c] == 'u' || str[c] == 'U'){
 			count++;
-			c++;
 		}
 	}
+	printf("\nNumber of vowels in the string: %d\n" , count);
 	return count;
 }
 
-int consCount(char str[]){
+int consCount(char *str){
 	int count = 0;
 	int c = 0;
-	while(str[c] != '\0'){
+	for(c = 0; str[c] != '\0';c++){
 		if(str[c] != 'a' || str[c] != 'A' || str[c] != 'e' || str[c] != 'E' || str[c] != 'i' || str[c] != 'I' || str[c] !='o' || str[c]!='O' || str[c] != 'u' || str[c] != 'U'){
 			count++;
-			c++;
 		}
 	}
+	printf("\nNumber of vowels in the string: %d\n" , count);
 	return count;
 }
 
-void Upper(char str[]){
-	for(int i = 0; str[i] != "\0"; i++){
-		str[i] = toupper(str[i]);
-		printf("\nThe uppercase sentence is: %c", str[i]);
-	}
-	
+void Upper(char *str){
+	puts(strupr(str));
 }
 
-void Lower(char str[]){
-	for(int i = 0; str[i] != "\0"; i++){
-		str[i] = tolower(str[i]);
-		printf("\nThe uppercase sentence is: %c", str[i]);
-	}
+void Lower(char *str){
+	puts(strlwr(str));
 }
 
-
+void printAgain(char *str){
+	printf("Enter the string: \n");
+	fgets(str, 100, stdin);
+}
 
 void menu(){
 	printf("A) Count the number of vowels in the string\n");
@@ -108,7 +99,8 @@ void menu(){
 
 int main(){
 	printf("Enter the string\n");
-	scanf("%s", str);
+	fgets(str, 100, stdin);
+
 	menu();
 	request(str);
 	return 0;
