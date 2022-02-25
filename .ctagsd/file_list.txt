@@ -1,0 +1,4 @@
+C:\Users\Brandon\Documents\ECEGR2020\Lab_4\main.c
+C:\Users\Brandon\Documents\ECEGR2020\Lab3DE\main.c
+C:\Users\Brandon\Documents\ECEGR2020\Lab2\main.c
+C:\Users\Brandon\Documents\ECEGR2020\Lab_3\main.c

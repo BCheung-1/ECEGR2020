@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\cheun\Documents\ECEGR2020\ECEGR2020.workspace">
-  <int Value="1" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\cheun\Documents\ECEGR2020\ECEGR2020.workspace" Name="m_workspaceName"/>
+<Session Name="C:\Users\Brandon\Documents\ECEGR2020\ECEGR2020.workspace">
+  <int Value="2" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\Brandon\Documents\ECEGR2020\ECEGR2020.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\cheun\Documents\ECEGR2020\Lab_3\main.c" Name="FileName"/>
-      <int Value="102" Name="FirstVisibleLine"/>
-      <int Value="122" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Brandon\Documents\ECEGR2020\Lab3DE\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c" Name="FileName"/>
-      <int Value="84" Name="FirstVisibleLine"/>
+      <wxString Value="C:\Users\Brandon\Documents\ECEGR2020\Lab_3\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="56" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Brandon\Documents\ECEGR2020\Lab_4\main.c" Name="FileName"/>
+      <int Value="39" Name="FirstVisibleLine"/>
+      <int Value="36" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Brandon\Documents\ECEGR2020\Lab_4\test.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
       <int Value="107" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\cheun\Documents\ECEGR2020\Lab2\main.c" Name="FileName"/>
-      <int Value="54" Name="FirstVisibleLine"/>
-      <int Value="80" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

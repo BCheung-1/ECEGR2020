@@ -3,13 +3,13 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=Lab3DE
+ProjectName            :=Lab_4
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
 WorkspacePath          :=C:/Users/Brandon/Documents/ECEGR2020
-ProjectPath            :=C:/Users/Brandon/Documents/ECEGR2020/Lab3DE
-IntermediateDirectory  :=../build-$(ConfigurationName)/Lab3DE
-OutDir                 :=../build-$(ConfigurationName)/Lab3DE
+ProjectPath            :=C:/Users/Brandon/Documents/ECEGR2020/Lab_4
+IntermediateDirectory  :=../build-$(ConfigurationName)/Lab_4
+OutDir                 :=../build-$(ConfigurationName)/Lab_4
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/Lab3DE/main.c$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/Lab_4/test.cpp$(ObjectSuffix) ../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix) 
 
 
 
@@ -74,18 +74,18 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): ../build-$(ConfigurationName)/Lab3DE/.d $(Objects) 
-	@if not exist "..\build-$(ConfigurationName)\Lab3DE" mkdir "..\build-$(ConfigurationName)\Lab3DE"
+$(OutputFile): ../build-$(ConfigurationName)/Lab_4/.d $(Objects) 
+	@if not exist "..\build-$(ConfigurationName)\Lab_4" mkdir "..\build-$(ConfigurationName)\Lab_4"
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@if not exist "..\build-$(ConfigurationName)\Lab3DE" mkdir "..\build-$(ConfigurationName)\Lab3DE"
+	@if not exist "..\build-$(ConfigurationName)\Lab_4" mkdir "..\build-$(ConfigurationName)\Lab_4"
 	@if not exist ""..\build-$(ConfigurationName)\bin"" mkdir ""..\build-$(ConfigurationName)\bin""
 
-../build-$(ConfigurationName)/Lab3DE/.d:
-	@if not exist "..\build-$(ConfigurationName)\Lab3DE" mkdir "..\build-$(ConfigurationName)\Lab3DE"
+../build-$(ConfigurationName)/Lab_4/.d:
+	@if not exist "..\build-$(ConfigurationName)\Lab_4" mkdir "..\build-$(ConfigurationName)\Lab_4"
 
 PreBuild:
 
@@ -93,16 +93,24 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/Lab3DE/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/Lab3DE/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/Users/Brandon/Documents/ECEGR2020/Lab3DE/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/Lab3DE/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab3DE/main.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab3DE/main.c$(DependSuffix) -MM main.c
+../build-$(ConfigurationName)/Lab_4/test.cpp$(ObjectSuffix): test.cpp ../build-$(ConfigurationName)/Lab_4/test.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Brandon/Documents/ECEGR2020/Lab_4/test.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test.cpp$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/Lab_4/test.cpp$(DependSuffix): test.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_4/test.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_4/test.cpp$(DependSuffix) -MM test.cpp
 
-../build-$(ConfigurationName)/Lab3DE/main.c$(PreprocessSuffix): main.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Lab3DE/main.c$(PreprocessSuffix) main.c
+../build-$(ConfigurationName)/Lab_4/test.cpp$(PreprocessSuffix): test.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Lab_4/test.cpp$(PreprocessSuffix) test.cpp
+
+../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/Users/Brandon/Documents/ECEGR2020/Lab_4/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix) -MM main.c
+
+../build-$(ConfigurationName)/Lab_4/main.c$(PreprocessSuffix): main.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Lab_4/main.c$(PreprocessSuffix) main.c
 
 
--include ../build-$(ConfigurationName)/Lab3DE//*$(DependSuffix)
+-include ../build-$(ConfigurationName)/Lab_4//*$(DependSuffix)
 ##
 ## Clean
 ##
