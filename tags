@@ -1,18 +1,20 @@
-str	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^char str[100];$/;"	variable	line:5
-option	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^char option;$/;"	variable	line:6
-a	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^int a = 1;$/;"	variable	line:7
-junk	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^char junk;$/;"	variable	line:8
-request	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^void request(char *str){$/;"	function	line:10	signature:(char *str)	returns:void 
-vowelCount	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^int vowelCount(char *str){$/;"	function	line:50	signature:(char *str)	returns:int 
-count	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^	int count = 0;$/;"	local	line:51
-c	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^	int c = 0;$/;"	local	line:52
-consCount	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^int consCount(char *str){$/;"	function	line:62	signature:(char *str)	returns:int 
-count	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^	int count = 0;$/;"	local	line:63
-c	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^	int c = 0;$/;"	local	line:64
-Upper	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^void Upper(char *str){$/;"	function	line:74	signature:(char *str)	returns:void 
-strupr	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^	puts(strupr(str));$/;"	prototype	line:75	signature:(str)	returns:puts 
-Lower	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^void Lower(char *str){$/;"	function	line:78	signature:(char *str)	returns:void 
-strlwr	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^	puts(strlwr(str));$/;"	prototype	line:79	signature:(str)	returns:puts 
-printAgain	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^void printAgain(char *str){$/;"	function	line:82	signature:(char *str)	returns:void 
-menu	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^void menu(){$/;"	function	line:87	signature:()	returns:void 
-main	C:\Users\cheun\Documents\ECEGR2020\Lab3DE\main.c	/^int main(){$/;"	function	line:100	signature:()	returns:int 
+Queue	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^typedef struct Queue$/;"	struct	line:5
+items	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    float items;$/;"	member	line:7	struct:Queue	access:public
+next	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	struct Queue* next;$/;"	member	line:8	struct:Queue	typeref:struct:Queue::Queue	access:public
+Queue	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^typedef struct Queue {     float items; 	struct Queue* next; } Queue; $/;"	typedef	line:9	typeref:struct:Queue
+headNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^Queue* headNode = NULL;$/;"	variable	line:11
+newQueue	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^Queue* newQueue(int cap)$/;"	function	line:13	signature:(int cap)	returns:Queue 
+newNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    Queue *newNode = (Queue*)malloc(sizeof(Queue));$/;"	local	line:15	type:Queue
+size	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int size() {$/;"	function	line:25	signature:()	returns:int 
+newNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    Queue *newNode = headNode;$/;"	local	line:26	type:Queue
+i	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	int i = 0;$/;"	local	line:27
+isEmpty	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int isEmpty() {$/;"	function	line:36	signature:()	returns:int 
+isFull	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int isFull() {$/;"	function	line:41	signature:()	returns:int 
+insert	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int insert(float x)$/;"	function	line:46	signature:(float x)	returns:int 
+newNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	Queue* newNode = newQueue(x);$/;"	local	line:55	type:Queue
+currentNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	Queue* currentNode = headNode;$/;"	local	line:62	type:Queue
+temp	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	Queue* temp = headNode;$/;"	variable	line:84
+temp	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	free(temp);$/;"	variable	line:86
+peek	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int peek(float* x)$/;"	function	line:92	signature:(float* x)	returns:int 
+main	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int main()$/;"	function	line:106	signature:()	returns:int 
+value	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    float value;$/;"	local	line:108

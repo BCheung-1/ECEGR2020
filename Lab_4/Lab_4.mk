@@ -6,15 +6,15 @@
 ProjectName            :=Lab_4
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=C:/Users/Brandon/Documents/ECEGR2020
-ProjectPath            :=C:/Users/Brandon/Documents/ECEGR2020/Lab_4
+WorkspacePath          :=C:/Users/cheun/Documents/ECEGR2020
+ProjectPath            :=C:/Users/cheun/Documents/ECEGR2020/Lab_4
 IntermediateDirectory  :=../build-$(ConfigurationName)/Lab_4
 OutDir                 :=../build-$(ConfigurationName)/Lab_4
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Brandon
-Date                   :=23/02/2022
+User                   :=cheun
+Date                   :=28/02/2022
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/Lab_4/test.cpp$(ObjectSuffix) ../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix) 
 
 
 
@@ -93,16 +93,8 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/Lab_4/test.cpp$(ObjectSuffix): test.cpp ../build-$(ConfigurationName)/Lab_4/test.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Brandon/Documents/ECEGR2020/Lab_4/test.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/Lab_4/test.cpp$(DependSuffix): test.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_4/test.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_4/test.cpp$(DependSuffix) -MM test.cpp
-
-../build-$(ConfigurationName)/Lab_4/test.cpp$(PreprocessSuffix): test.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Lab_4/test.cpp$(PreprocessSuffix) test.cpp
-
 ../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/Users/Brandon/Documents/ECEGR2020/Lab_4/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "C:/Users/cheun/Documents/ECEGR2020/Lab_4/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix) -MM main.c
 

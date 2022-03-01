@@ -93,7 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="test.cpp"/>
     <File Name="main.c"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>
