@@ -34,11 +34,15 @@ int size() {
  
 // Utility function to check if the queue is empty or not
 int isEmpty() {
-    return headNode == NULL;       
+	Queue* temp = headNode;
+	free(temp);
+    return headNode == NULL;
 }
  
 // Utility function to check if the queue is full or not
 int isFull() {
+	Queue* temp = (Queue*)malloc(sizeof(Queue));
+	free(temp);
     return (malloc(sizeof(Queue)) == NULL);
 }
  

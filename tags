@@ -1,20 +1,65 @@
-Queue	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^typedef struct Queue$/;"	struct	line:5
-items	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    float items;$/;"	member	line:7	struct:Queue	access:public
-next	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	struct Queue* next;$/;"	member	line:8	struct:Queue	typeref:struct:Queue::Queue	access:public
-Queue	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^typedef struct Queue {     float items; 	struct Queue* next; } Queue; $/;"	typedef	line:9	typeref:struct:Queue
-headNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^Queue* headNode = NULL;$/;"	variable	line:11
-newQueue	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^Queue* newQueue(int cap)$/;"	function	line:13	signature:(int cap)	returns:Queue 
-newNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    Queue *newNode = (Queue*)malloc(sizeof(Queue));$/;"	local	line:15	type:Queue
-size	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int size() {$/;"	function	line:25	signature:()	returns:int 
-newNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    Queue *newNode = headNode;$/;"	local	line:26	type:Queue
-i	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	int i = 0;$/;"	local	line:27
-isEmpty	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int isEmpty() {$/;"	function	line:36	signature:()	returns:int 
-isFull	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int isFull() {$/;"	function	line:41	signature:()	returns:int 
-insert	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int insert(float x)$/;"	function	line:46	signature:(float x)	returns:int 
-newNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	Queue* newNode = newQueue(x);$/;"	local	line:55	type:Queue
-currentNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	Queue* currentNode = headNode;$/;"	local	line:62	type:Queue
-temp	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	Queue* temp = headNode;$/;"	variable	line:84
-temp	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^	free(temp);$/;"	variable	line:86
-peek	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int peek(float* x)$/;"	function	line:92	signature:(float* x)	returns:int 
-main	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^int main()$/;"	function	line:106	signature:()	returns:int 
-value	C:\Users\cheun\Documents\ECEGR2020\Lab_4D\QueueArray.c	/^    float value;$/;"	local	line:108
+student	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^typedef struct student{$/;"	struct	line:5
+ID	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	int ID;$/;"	member	line:6	struct:student	access:public
+firstName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	char firstName[30];$/;"	member	line:7	struct:student	access:public
+lastName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	char lastName[30];$/;"	member	line:8	struct:student	access:public
+GPA	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	float GPA;$/;"	member	line:9	struct:student	access:public
+next	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	struct student* next;$/;"	member	line:10	struct:student	typeref:struct:student::student	access:public
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^typedef struct student{ 	int ID; 	char firstName[30]; 	char lastName[30]; 	float GPA; 	struct student* next; } Student; $/;"	typedef	line:11	typeref:struct:student
+headNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^Student* headNode = NULL;$/;"	variable	line:13
+createStudent	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^Student* createStudent(int identity, char first[30],char last[30],float grade){$/;"	function	line:15	signature:(int identity, char first[30],char last[30],float grade)	returns:Student 
+newNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* newNode = NULL;$/;"	local	line:16	type:Student
+addNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void addNode(Student* newNode){$/;"	function	line:29	signature:(Student* newNode)	returns:void 
+currentNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* currentNode = headNode; $/;"	local	line:30	type:Student
+insertNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void insertNode(Student* newNode){$/;"	function	line:42	signature:(Student* newNode)	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* list = headNode;$/;"	local	line:43	type:Student
+nextNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^		Student* nextNode = list->next;$/;"	local	line:45	type:Student
+deleteNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void deleteNode(Student* newNode){$/;"	function	line:63	signature:(Student* newNode)	returns:void 
+currentNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* currentNode = headNode;$/;"	local	line:64	type:Student
+prevNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* prevNode = NULL;$/;"	local	line:65	type:Student
+main	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^int main()$/;"	function	line:87	signature:()	returns:int 
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	int options;$/;"	local	line:89
+yourID	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^		int yourID;$/;"	local	line:92
+firName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^		char firName[30] = "";	$/;"	local	line:93
+lasName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^		char lasName[30] = "";$/;"	local	line:94
+megrades	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^		float megrades;$/;"	local	line:95
+id	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^		Student* id = headNode;$/;"	local	line:97	type:Student
+ptr	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				Student* ptr = createStudent(yourID, firName, lasName, megrades);$/;"	local	line:125	type:Student
+freeNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void freeNode(){$/;"	function	line:147	signature:()	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* list = headNode;$/;"	local	line:148	type:Student
+nodenode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* nodenode = headNode->next;$/;"	local	line:149	type:Student
+saving	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void saving(){$/;"	function	line:157	signature:()	returns:void 
+fileopener	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	FILE *fileopener;$/;"	local	line:158	type:FILE
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* list = headNode;$/;"	local	line:160	type:Student
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	int studentNum = 0;$/;"	local	line:161
+readFile	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void readFile(){$/;"	function	line:178	signature:()	returns:void 
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	int giveMeYourID = 0;$/;"	local	line:179
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	char fiName[30] = "";$/;"	local	line:180
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	char laName[30] = "";$/;"	local	line:181
+leGrades	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	float leGrades;$/;"	local	line:182
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	int studentNum = 0;$/;"	local	line:183
+averageGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	float averageGPA = 0.0;$/;"	local	line:184
+c	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	char c;$/;"	local	line:185
+pointer	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* pointer = (Student*)malloc(sizeof(Student)); \/\/sets up a pointer to student memory allocation$/;"	local	line:186	type:Student
+gpaFile	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	FILE *gpaFile;$/;"	local	line:189	type:FILE
+fileNode	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^		Student* fileNode = createStudent(giveMeYourID, fiName, laName, leGrades);$/;"	local	line:206	type:Student
+updateStudent	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void updateStudent(int id){$/;"	function	line:211	signature:(int id)	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* list = headNode;$/;"	local	line:212	type:Student
+prevList	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* prevList = list;$/;"	local	line:213	type:Student
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	int options = 0;$/;"	local	line:215
+nextID	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				int nextID, prevID;$/;"	local	line:223
+prevID	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				int nextID, prevID;$/;"	local	line:223
+nextFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				char nextFirstName[30], prevFirstName[30];$/;"	local	line:224
+prevFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				char nextFirstName[30], prevFirstName[30];$/;"	local	line:224
+nextLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				char nextLastName[30], prevLastName[30];$/;"	local	line:225
+prevLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				char nextLastName[30], prevLastName[30];$/;"	local	line:225
+nextGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				float nextGPA, prevGPA;$/;"	local	line:226
+prevGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				float nextGPA, prevGPA;$/;"	local	line:226
+updateList	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^				Student* updateList = headNode;$/;"	local	line:227	type:Student
+removeStudent	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void removeStudent(int id){$/;"	function	line:284	signature:(int id)	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* list = headNode;$/;"	local	line:285	type:Student
+fname	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^			char fname[30];$/;"	local	line:288
+lname	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^			char lname[30];$/;"	local	line:289
+listStudent	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void listStudent(){$/;"	function	line:301	signature:()	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^	Student* list = headNode;$/;"	local	line:302	type:Student
+menu	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void menu(){$/;"	function	line:312	signature:()	returns:void 
+updateMenu	C:\Users\cheun\Documents\ECEGR2020\Lab_4\main.c	/^void updateMenu(char fi[30], char la[30]) \/\/ Displays the menu for the specific student to have their attributes updated.$/;"	function	line:321	signature:(char fi[30], char la[30])	returns:void 

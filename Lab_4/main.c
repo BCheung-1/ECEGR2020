@@ -265,7 +265,7 @@ void updateStudent(int id){
 						}
 						else{
 							prevList-> next = list->next;
-							insertNode;
+							insertNode(list);
 						}
 					case 5:
 						break;

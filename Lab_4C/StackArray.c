@@ -34,11 +34,15 @@ int size() {
  
 // Utility function to check if the stack is empty or not
 int isEmpty() {
+	Queue* temp = headNode;
+	free(temp);
     return headNode == NULL;
 }
  
 // Utility function to check if the stack is full or not
 int isFull() {
+	Queue* temp = (Queue*)malloc(sizeof(Queue));
+	free(temp);
     return (malloc(sizeof(Stack)) == NULL);
 }
  
