@@ -1,4 +1,7 @@
-C:\Users\Brandon\Documents\ECEGR2020\Lab_4\main.c
-C:\Users\Brandon\Documents\ECEGR2020\Lab3DE\main.c
-C:\Users\Brandon\Documents\ECEGR2020\Lab2\main.c
-C:\Users\Brandon\Documents\ECEGR2020\Lab_3\main.c
+C:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab_5\main.cpp
+C:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab_4D\QueueArray.c
+C:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab_4C\StackArray.c
+C:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab_4\main.c
+C:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab3DE\main.c
+C:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab2\main.c
+C:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab_3\main.c

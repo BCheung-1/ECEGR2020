@@ -3,13 +3,13 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=Lab_4
+ProjectName            :=Lab_5
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
 WorkspacePath          :=C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020
-ProjectPath            :=C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020/Lab_4
-IntermediateDirectory  :=../build-$(ConfigurationName)/Lab_4
-OutDir                 :=../build-$(ConfigurationName)/Lab_4
+ProjectPath            :=C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020/Lab_5
+IntermediateDirectory  :=../build-$(ConfigurationName)/Lab_5
+OutDir                 :=../build-$(ConfigurationName)/Lab_5
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/Lab_5/main.cpp$(ObjectSuffix) 
 
 
 
@@ -74,18 +74,18 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): ../build-$(ConfigurationName)/Lab_4/.d $(Objects) 
-	@if not exist "..\build-$(ConfigurationName)\Lab_4" mkdir "..\build-$(ConfigurationName)\Lab_4"
+$(OutputFile): ../build-$(ConfigurationName)/Lab_5/.d $(Objects) 
+	@if not exist "..\build-$(ConfigurationName)\Lab_5" mkdir "..\build-$(ConfigurationName)\Lab_5"
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@if not exist "..\build-$(ConfigurationName)\Lab_4" mkdir "..\build-$(ConfigurationName)\Lab_4"
+	@if not exist "..\build-$(ConfigurationName)\Lab_5" mkdir "..\build-$(ConfigurationName)\Lab_5"
 	@if not exist ""..\build-$(ConfigurationName)\bin"" mkdir ""..\build-$(ConfigurationName)\bin""
 
-../build-$(ConfigurationName)/Lab_4/.d:
-	@if not exist "..\build-$(ConfigurationName)\Lab_4" mkdir "..\build-$(ConfigurationName)\Lab_4"
+../build-$(ConfigurationName)/Lab_5/.d:
+	@if not exist "..\build-$(ConfigurationName)\Lab_5" mkdir "..\build-$(ConfigurationName)\Lab_5"
 
 PreBuild:
 
@@ -93,16 +93,16 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020/Lab_4/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_4/main.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_4/main.c$(DependSuffix) -MM main.c
+../build-$(ConfigurationName)/Lab_5/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/Lab_5/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020/Lab_5/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/Lab_5/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_5/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_5/main.cpp$(DependSuffix) -MM main.cpp
 
-../build-$(ConfigurationName)/Lab_4/main.c$(PreprocessSuffix): main.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Lab_4/main.c$(PreprocessSuffix) main.c
+../build-$(ConfigurationName)/Lab_5/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Lab_5/main.cpp$(PreprocessSuffix) main.cpp
 
 
--include ../build-$(ConfigurationName)/Lab_4//*$(DependSuffix)
+-include ../build-$(ConfigurationName)/Lab_5//*$(DependSuffix)
 ##
 ## Clean
 ##
