@@ -1,4 +1,4 @@
--IC:\Users\cheun\OneDrive\Documents\GitHub\ECEGR2020\Lab_5
+-IC:\Users\cheun\Documents\ECEGR2020\Lab_5
 -Ic:\MinGW\lib\gcc\mingw32\9.2.0\include\c++
 -Ic:\MinGW\lib\gcc\mingw32\9.2.0\include\c++\mingw32
 -Ic:\MinGW\lib\gcc\mingw32\9.2.0\include\c++\backward

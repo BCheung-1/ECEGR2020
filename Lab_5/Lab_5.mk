@@ -6,8 +6,8 @@
 ProjectName            :=Lab_5
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020
-ProjectPath            :=C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020/Lab_5
+WorkspacePath          :=C:/Users/cheun/Documents/ECEGR2020
+ProjectPath            :=C:/Users/cheun/Documents/ECEGR2020/Lab_5
 IntermediateDirectory  :=../build-$(ConfigurationName)/Lab_5
 OutDir                 :=../build-$(ConfigurationName)/Lab_5
 CurrentFileName        :=
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/Lab_5/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/Lab_5/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/cheun/OneDrive/Documents/GitHub/ECEGR2020/Lab_5/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/cheun/Documents/ECEGR2020/Lab_5/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/Lab_5/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Lab_5/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Lab_5/main.cpp$(DependSuffix) -MM main.cpp
 

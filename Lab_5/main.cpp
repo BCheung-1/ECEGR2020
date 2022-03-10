@@ -85,11 +85,11 @@ Student :: Student(Student &init)
 {
 	ID = init.ID;
 	GPA = init.GPA;
-	if(init.firstName)
+	if(init.firstName != NULL)
 	{
 		setfirstName(init.firstName);
 	}
-	if(init.lastName)
+	if(init.lastName != NULL)
 	{
 		setlastName(init.lastName);
 	}
