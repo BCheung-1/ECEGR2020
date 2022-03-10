@@ -8,10 +8,10 @@ enum Department{Physics, Math, Engineering, Chemistry, English, General};
 
 class Student{
 	private:
-		int ID;
-		char* firstName;
-		char* lastName;
-		float GPA;
+		int ID =NULL;
+		char* firstName = NULL;
+		char* lastName = NULL;
+		float GPA =NULL;
 	
 	public:
 		Student();
@@ -98,7 +98,7 @@ Student :: Student(Student &init)
 
 Student :: ~Student()
 {
-	cout << "Student Desconstructor " << firstName << lastName << endl;
+	cout << "Student Deconstructor " << firstName << lastName << endl;
 	if(firstName)
 	{
 		free(firstName);
@@ -224,7 +224,7 @@ Professor :: Professor(Professor &init)
 
 Professor :: ~Professor()
 {
-	cout << "Professor Desconstructor " << firstName << lastName << endl;
+	cout << "Professor Deconstructor " << firstName << lastName << endl;
 	if(firstName)
 	{
 		free(firstName);
@@ -328,7 +328,7 @@ Employee :: Employee(Employee &init)
 
 Employee :: ~Employee()
 {
-	cout << "Employee Desconstructor " << firstName << lastName << endl;
+	cout << "Employee Deconstructor " << firstName << lastName << endl;
 	if(firstName)
 	{
 		free(firstName);
