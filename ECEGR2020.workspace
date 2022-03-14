@@ -6,8 +6,8 @@
   <Project Name="Lab_4" Path="Lab_4/Lab_4.project" Active="No"/>
   <Project Name="Lab_4C" Path="Lab_4C/Lab_4C.project" Active="No"/>
   <Project Name="Lab_4D" Path="Lab_4D/Lab_4D.project" Active="No"/>
-  <Project Name="Lab_5" Path="Lab_5/Lab_5.project" Active="Yes"/>
-  <Project Name="Lab_6" Path="Lab_6/Lab_6.project" Active="No"/>
+  <Project Name="Lab_5" Path="Lab_5/Lab_5.project" Active="No"/>
+  <Project Name="Lab_6" Path="Lab_6/Lab_6.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
