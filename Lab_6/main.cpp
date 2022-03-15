@@ -90,7 +90,6 @@ Student :: Student(int identity, char* fname, char* lname, float grade)
 	strcpy(this->lastName, lname);
 	this->GPA = grade;
 	this->next = NULL;
-	cout << "Student constructor for " << firstName << lastName <<"\n";
 }
 
 Student :: Student(Student &init)
@@ -119,7 +118,20 @@ Student :: ~Student()
 	{
 		free(lastName);
 	}
-	cout << "Student Deconstructor " << firstName << lastName << endl;
+	cout << "Student Deconstructor " << firstName << " " <<lastName << endl;
+}
+
+void addNode(Student* newNode){
+	Student* currentNode = headNode; 
+	if (headNode == NULL){
+		headNode = newNode;
+		return;
+	}
+	while(currentNode-> getNext() != NULL){
+		currentNode = currentNode->getNext();
+	}
+	currentNode->setNext(newNode);
+	newNode->setNext(NULL);
 }
 
 void insertNode(Student* newNode){
@@ -149,7 +161,7 @@ void deleteNode(Student* newNode){
 	
 	if(headNode == newNode){
 		headNode = headNode->getNext();
-		free(newNode);
+		delete newNode;
 		return;
 	}
 	
@@ -162,128 +174,70 @@ void deleteNode(Student* newNode){
 		prevNode->setNext(currentNode->getNext());
 	}
 	
-	free(newNode);
+	delete newNode;
 }
 
 void readFile(){
 	ifstream FILE;
-	int giveMeYourID = 0;
-	char fiName[30] = "";
-	char laName[30] = "";
-	float leGrades;
+	int giveMeYourID = NULL;
+	char* fiName = NULL;
+	char* laName = NULL;
+	float leGrades = NULL;
 	int studentNum = 0;
-	float averageGPA = 0.0;
-	char c;
-	//Student* pointer = (Student*)malloc(sizeof(Student)); //sets up a pointer to student memory allocation
-	//Student **newArray = (Student**)malloc(studentNum * sizeof(Student*));
-	//newArray[i] = (Student*)malloc(sizeof(Student));
-	//FILE *gpaFile;
+
 	FILE.open("gpaOrganizer.txt"); //reads the text file
 	
-	if(!FILE.is_open(){
-		printf("File does not exist\n"); //checking if the file exists
+	if(!FILE.is_open()){
+		cout << "File does not exist\n"; //checking if the file exists
 	}
-	
-	fscanf(gpaFile, "Number of Student: %d", &studentNum); //looks at the first line to take the number of students
-	printf("Number of Student: %d\n", studentNum);
-	
-	for(int i = 0; i < studentNum; i++){
-		fscanf(gpaFile, "\nStudent ID: %d", &giveMeYourID ); //looks at the next line and sets variable as id
-		fscanf(gpaFile, "\nStudent firstname: %s", fiName);//looks at the next line and sets variable as firstname
-		fscanf(gpaFile, "\nStudent lastname: %s", laName);//looks at the next line and sets variable as lastname
-		fscanf(gpaFile, "\nStudent GPA: %f", &leGrades);//looks at the next line and sets variable as gpa
-		
-		Student* fileNode = createStudent(giveMeYourID, fiName, laName, leGrades);
-		addNode(fileNode);
+	else{
+		string fill = "";
+		FILE >> fill;
+		FILE >> fill;
+		FILE >> fill;
+		//FILE >> fill;
+		FILE >> studentNum;
+		cout << "Number of Student: " << studentNum;
+		for(int i = 0; i < studentNum; i++){
+			FILE >> fill;
+			FILE >> fill;
+			FILE >> giveMeYourID;
+			FILE >> fill;
+			FILE >> fill;
+			FILE >> fill;
+			fiName = (char*)malloc(strlen((fill.c_str())+1));
+			strcpy(fiName, fill.c_str());
+			FILE >> fill;
+			FILE >> fill;
+			FILE >> fill;
+			laName = (char*)malloc(strlen((fill.c_str())+1));
+			strcpy(laName, fill.c_str());
+			FILE >> fill;
+			FILE >> fill;
+			FILE >> leGrades;
+			Student* fileNode = new Student(giveMeYourID, fiName, laName, leGrades);
+			addNode(fileNode);
+			free(fiName);
+			free(laName);
+		}
 	}
+	FILE.close();
 }
 
-void updateStudent(int id){
-	Student* list = headNode;
-	Student* prevList = list;
-	//int c = 0;
-	int options = 0;
-	while(list != NULL){
-		if(id == list->ID){
-			do{
-				updateMenu(list->firstName, list-> lastName);
-				printf("Choose your option:");
-				scanf("%d", &options);
-				
-				int nextID, prevID;
-				char nextFirstName[30], prevFirstName[30];
-				char nextLastName[30], prevLastName[30];
-				float nextGPA, prevGPA;
-				Student* updateList = headNode;
-				
-				switch(options){
-					case 1: 
-						printf("Enter new ID:");
-						scanf("%d",&nextID);
-						while(updateList != NULL){
-							if(nextID == updateList -> ID){
-								printf("Enter a different id\n");
-								updateList = headNode;
-								printf("Enter updated ID of student: ");
-								scanf("%d", &nextID);
-								
-							}
-							updateList = updateList ->next;
-						}
-						prevID = list->ID;
-						list->ID = nextID;
-					case 2:
-						printf("\nEnter updated first name:");
-						scanf("%s", nextFirstName);
-						strcpy(prevFirstName, list->firstName);
-						strcpy(list -> firstName, nextFirstName);
-						break;
-					case 3:
-						printf("\nEnter updated last name:");
-						scanf("%s", nextLastName);
-						strcpy(prevLastName, list->lastName);
-						strcpy(list -> lastName, nextLastName);
-						break;
-					case 4: 
-						printf("\nEnter updated GPA: ");
-						scanf("%f", &nextGPA);
-						prevGPA = list -> GPA;
-						list -> GPA = nextGPA;
-						if(prevList == list){
-							list -> next = NULL;
-							insertNode(list);
-						}
-						else{
-							prevList-> next = list->next;
-							insertNode(list);
-						}
-					case 5:
-						break;
-				}
-			}
-			while(options != 5);
-			return;
-		}
-		prevList = list;
-		list = list-> next;
-	}
-	
-	
-}
 
 void removeStudent(int id){
 	Student* list = headNode;
 	while(list != NULL){
-		if(id == list->ID){
+		if(id == list->getID()){
 			char fname[30];
 			char lname[30];
-			strcpy(fname, list->firstName);
-			strcpy(lname, list->lastName);
+			strcpy(fname, list->getfirstName());
+			strcpy(lname, list->getlastName());
 			deleteNode(list);
 			printf("Student deleted");
 			return;
 		}
-		list = list-> next;
+		list = list-> getNext();
 	}
 	return; 
 }
@@ -291,11 +245,11 @@ void removeStudent(int id){
 void listStudent(){
 	Student* list = headNode;
 	while(list != NULL){
-		printf("\nStudent ID: %d", list -> ID);
-		printf("\nStudent firstname: %s", list -> firstName);
-		printf("\nStudent lastname: %s", list -> lastName);
-		printf("\nStudent GPA: %f", list -> GPA);
-		list = list ->next;
+		printf("\nStudent ID: %d", list -> getID());
+		printf("\nStudent firstname: %s", list -> getfirstName());
+		printf("\nStudent lastname: %s", list -> getlastName());
+		printf("\nStudent GPA: %f", list -> getGPA());
+		list = list ->getNext();
 	}
 }
 
@@ -316,4 +270,180 @@ void updateMenu(char fi[30], char la[30])
 	printf("3) Last Name \n");
 	printf("4) GPA \n");
 	printf("5) Quit \n");
+}
+
+void updateStudent(int id){
+	Student* list = headNode;
+	Student* prevList = list;
+	//int c = 0;
+	int options = 0;
+	while(list != NULL){
+		if(id == list->getID()){
+			do{
+				updateMenu(list->getfirstName(), list-> getlastName());
+				cout << "Choose your option:";
+				cin >> options;
+				
+				int nextID, prevID = 0;
+				char *nextFirstName, *prevFirstName = NULL;
+				char *nextLastName, *prevLastName = NULL;
+				float nextGPA, prevGPA = 0;
+				string fill = "";
+				Student* updateList = headNode;
+				
+				switch(options){
+					case 1: 
+						cout << "Enter new ID:";
+						cin >> nextID;
+						while(updateList != NULL){
+							if(nextID == updateList -> getID()){
+								cout << "Enter a different id\n";
+								updateList = headNode;
+								cout << "Enter updated ID of student: ";
+								cin >> nextID;;
+							}
+							updateList = updateList ->getNext();
+						}
+						prevID = list->getID();
+						list->setID(nextID);
+					case 2:
+						cout << "\nEnter updated first name: ";
+						cin >> fill;
+						nextFirstName = (char*)malloc(strlen((fill.c_str())+1));
+						strcpy(nextFirstName, fill.c_str());
+						prevFirstName = (char*)malloc(strlen(list->getfirstName()+1));
+						strcpy(prevFirstName, list->getfirstName());
+						list->setfirstName(nextFirstName);
+						free(nextFirstName);
+						free(prevFirstName);
+						break;
+					case 3:
+						cout << "\nEnter updated name name: ";
+						cin >> fill;
+						nextLastName = (char*)malloc(strlen((fill.c_str())+1));
+						strcpy(nextLastName, fill.c_str());
+						prevLastName = (char*)malloc(strlen(list->getlastName()+1));
+						strcpy(prevLastName, list->getlastName());
+						list->setlastName(nextLastName);
+						free(nextFirstName);
+						free(prevFirstName);
+						break;
+					case 4: 
+						cout << "\nEnter updated GPA: ";
+						cin >> nextGPA;
+						prevGPA = list -> getGPA();
+						list -> setGPA(nextGPA);
+						if(prevList == list){
+							list -> setNext(NULL);
+							insertNode(list);
+						}
+						else{
+							prevList-> setNext(list->getNext());
+							insertNode(list);
+						}
+					case 5:
+						break;
+				}
+			}
+			while(options != 5);
+			return;
+		}
+		prevList = list;
+		list = list-> getNext();
+	}
+}
+
+void saving(){
+	ofstream FILE;
+	Student* list = headNode;
+	int studentNum = 0;
+
+	FILE.open("gpaOrganizer.txt"); //reads the text file
+	
+	while(list != NULL){
+		studentNum++;
+		list = list->getNext();
+	}
+	if (!FILE.is_open()){
+		cout << "File does not exist\n";
+	}
+	else{
+		FILE << "Number of Student: "<< studentNum;
+		while(list != NULL){
+			FILE << "\nStudent ID: " << list->getID();
+			FILE << "\nStudent firstname: " << list->getfirstName();
+			FILE << "\nStudent lastname: " << list->getlastName();
+			FILE << "\nStudent GPA: " << list->getGPA();
+			list = list->getNext();
+		}
+	}
+	FILE.close();
+}
+
+int main()
+{
+	int options = 0;
+	readFile();
+	do{
+		int yourID = 0;
+		char *firName = NULL;	
+		char *lasName = NULL;
+		float megrades = 0;
+		string fill = "";
+		Student* id = headNode;
+		menu();
+		cout << "Choose your option:\n";
+		cin >> options;
+		switch(options){
+			case 1:
+				listStudent();
+				break;
+			case 2: {
+				cout << "Student ID: \n"; 
+				cin >> yourID;
+				while(id != NULL){
+					if(yourID == id->getID()){
+						cout << "ID is in use, use another one. \n";
+						id = headNode;
+						cout << "Enter a new id \n";
+						cin >> yourID;
+					}
+					id = id->getNext();
+				}
+				
+				cout << "Student firstname: \n";
+				cin >> fill;
+				firName = (char*)malloc(strlen((fill.c_str())+1));
+				strcpy(firName, fill.c_str());
+				
+				cout << "Student lastname: \n";
+				cin >> fill;
+				lasName = (char*)malloc(strlen((fill.c_str())+1));
+				strcpy(lasName, fill.c_str());
+				
+				cout << "Student GPA: \n";
+				cin >> megrades;
+				
+				Student* ptr = new Student(yourID, firName, lasName, megrades);
+				insertNode(ptr);
+				free(firName);
+				free(lasName);
+				break;
+			}
+			case 3: 
+				cout << "Enter ID of student to remove: ";
+				cin >> yourID;
+				removeStudent(yourID);
+				break;
+			case 4:
+				cout << "Enter id of student to update:";
+				cin >> yourID;
+				updateStudent(yourID);
+				break;
+			case 5:
+				break;
+		}
+	}
+	while(options != 5);
+	saving();
 }
