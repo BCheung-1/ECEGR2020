@@ -55,7 +55,7 @@ class Student{
 	}
 	void setfirstName(char *fname){
 		free(firstName);
-		firstName = (char*)malloc(sizeof(strlen(fname)+1));
+		firstName = (char*)malloc(sizeof(strlen(fname)+1));//since string no longer has 30 characters max we can malloc the length of the string + 1 because it will take any length of a string and will hold the memory for it
 		strcpy(firstName,fname);
 	}
 	void setlastName(char *lname){
