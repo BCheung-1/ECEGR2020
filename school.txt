@@ -1,0 +1,25 @@
+Number of People: 4
+Professor
+ID: 123123
+First Name: Ken
+Last Name: R
+Salary: 348302
+Tenured: 1
+Department: Engineering
+Student
+ID: 345321
+First Name: Bob
+Last Name: Wasabi
+GPA: 3.4
+Employee
+ID: 123
+First Name: Joe
+Last Name: Smith
+Salary: 34523
+Professor
+ID: 321
+First Name: Radish
+Last Name: Lee
+Salary: 183921
+Tenured: 1
+Department: Physics

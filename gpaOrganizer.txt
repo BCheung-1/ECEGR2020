@@ -1,22 +1,25 @@
-Number of Student: 5
-Student ID: 56742
+Number of Students: 6422180
+Number of Students: 56742
 Student firstname: Ken
 Student lastname: R
 Student GPA: 4.000000
-Student ID: 42012
+Number of Students: 42012
 Student firstname: Brandon
 Student lastname: C
 Student GPA: 3.500000
-Student ID: 69658
+Number of Students: 12832
+Student firstname: brandon
+Student lastname: cheun
+Student GPA: 3.000000
+Number of Students: 69658
 Student firstname: Radish
 Student lastname: Trueman
 Student GPA: 3.000000
-Student ID: 45674
+Number of Students: 45674
 Student firstname: Bobby
 Student lastname: Wasabi
 Student GPA: 2.800000
-Student ID: 88594
+Number of Students: 88594
 Student firstname: Joe
 Student lastname: Smith
 Student GPA: 3.700000
-

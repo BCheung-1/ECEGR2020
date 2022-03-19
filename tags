@@ -1,0 +1,287 @@
+Department	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enum	line:9
+Physics	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enumerator	line:9	enum:Department
+Math	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enumerator	line:9	enum:Department
+Engineering	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enumerator	line:9	enum:Department
+Chemistry	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enumerator	line:9	enum:Department
+English	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enumerator	line:9	enum:Department
+General	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enumerator	line:9	enum:Department
+Unknown	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^enum Department{Physics, Math, Engineering, Chemistry, English, General, Unknown};$/;"	enumerator	line:9	enum:Department
+Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^class Person{$/;"	class	line:11
+ID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		int ID = 0;$/;"	member	line:13	class:Person	access:private
+firstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string firstName;$/;"	member	line:14	class:Person	access:private
+lastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string lastName = "";$/;"	member	line:15	class:Person	access:private
+next	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person* next;$/;"	member	line:16	class:Person	access:private
+Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person();$/;"	prototype	line:19	class:Person	access:public	signature:()
+Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person(int identity, string fName, string lName);$/;"	prototype	line:20	class:Person	access:public	signature:(int identity, string fName, string lName)
+Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person(Person &init);$/;"	prototype	line:21	class:Person	access:public	signature:(Person &init)
+~Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		virtual ~Person();$/;"	prototype	line:22	class:Person	access:public	implementation:virtual	signature:()	returns:virtual 
+operator =	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person& operator=(Person const &per)$/;"	function	line:23	class:Person	access:public	signature:(Person const &per)	returns:Person 
+getID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		int getID()$/;"	function	line:33	class:Person	access:public	signature:()	returns:int 
+getFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string getFirstName()$/;"	function	line:37	class:Person	access:public	signature:()	returns:string 
+getLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string getLastName()$/;"	function	line:41	class:Person	access:public	signature:()	returns:string 
+getNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person* getNext()$/;"	function	line:45	class:Person	access:public	signature:()	returns:Person 
+setID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		void setID(int identity)$/;"	function	line:49	class:Person	access:public	signature:(int identity)	returns:void 
+setFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		void setFirstName(string fName)$/;"	function	line:53	class:Person	access:public	signature:(string fName)	returns:void 
+setLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		void setLastName(string lName)$/;"	function	line:57	class:Person	access:public	signature:(string lName)	returns:void 
+setNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		void setNext(Person* adj)$/;"	function	line:61	class:Person	access:public	signature:(Person* adj)	returns:void 
+headNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Person* headNode = NULL;$/;"	variable	line:67
+Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Person :: Person()$/;"	function	line:69	class:Person	signature:()	returns:Person :: 
+Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Person :: Person(int identity, string fName, string lName)$/;"	function	line:77	class:Person	signature:(int identity, string fName, string lName)	returns:Person :: 
+Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Person :: Person(Person &init)$/;"	function	line:85	class:Person	signature:(Person &init)	returns:Person :: 
+~Person	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Person :: ~Person()$/;"	function	line:95	class:Person	signature:()	returns:Person :: 
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^class Student: public Person$/;"	class	line:100	inherits:Person
+GPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	float GPA;$/;"	member	line:103	class:Student	access:private
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Student();$/;"	prototype	line:106	class:Student	access:public	signature:()
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Student(int identity, string fname, string lname, float grade);$/;"	prototype	line:107	class:Student	access:public	signature:(int identity, string fname, string lname, float grade)
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Student(Student &init);$/;"	prototype	line:108	class:Student	access:public	signature:(Student &init)
+~Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	~Student();$/;"	prototype	line:109	class:Student	access:public	signature:()
+getGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	float getGPA()$/;"	function	line:110	class:Student	access:public	signature:()	returns:float 
+setGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	void setGPA(float gpa_in)$/;"	function	line:115	class:Student	access:public	signature:(float gpa_in)	returns:void 
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Student :: Student()$/;"	function	line:121	class:Student	signature:()	returns:Student :: 
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Student :: Student(int identity, string fname, string lname, float grade)$/;"	function	line:130	class:Student	signature:(int identity, string fname, string lname, float grade)	returns:Student :: 
+Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Student :: Student(Student &init)$/;"	function	line:139	class:Student	signature:(Student &init)	returns:Student :: 
+~Student	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Student :: ~Student()$/;"	function	line:148	class:Student	signature:()	returns:Student :: 
+Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^class Employee: public Person$/;"	class	line:153	inherits:Person
+salary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	float salary;$/;"	member	line:156	class:Employee	access:private
+Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Employee();$/;"	prototype	line:159	class:Employee	access:public	signature:()
+Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Employee(int identity, string fname, string lname, float money);$/;"	prototype	line:160	class:Employee	access:public	signature:(int identity, string fname, string lname, float money)
+Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Employee(Employee &init);$/;"	prototype	line:161	class:Employee	access:public	signature:(Employee &init)
+~Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	~Employee();$/;"	prototype	line:162	class:Employee	access:public	signature:()
+getSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	float getSalary()$/;"	function	line:163	class:Employee	access:public	signature:()	returns:float 
+setSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	void setSalary(float money)$/;"	function	line:168	class:Employee	access:public	signature:(float money)	returns:void 
+Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Employee :: Employee()$/;"	function	line:174	class:Employee	signature:()	returns:Employee :: 
+Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Employee :: Employee(int identity, string fname, string lname, float money)$/;"	function	line:183	class:Employee	signature:(int identity, string fname, string lname, float money)	returns:Employee :: 
+Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Employee :: Employee(Employee &init)$/;"	function	line:192	class:Employee	signature:(Employee &init)	returns:Employee :: 
+~Employee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Employee :: ~Employee()$/;"	function	line:201	class:Employee	signature:()	returns:Employee :: 
+Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^class Professor: public Employee$/;"	class	line:206	inherits:Employee
+tenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	bool tenured;$/;"	member	line:209	class:Professor	access:private
+department	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Department department;$/;"	member	line:210	class:Professor	access:private
+Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Professor();$/;"	prototype	line:213	class:Professor	access:public	signature:()
+Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Professor(int identity, string fname, string lname, float money, bool ten, Department major);$/;"	prototype	line:214	class:Professor	access:public	signature:(int identity, string fname, string lname, float money, bool ten, Department major)
+Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Professor(Professor &init);$/;"	prototype	line:215	class:Professor	access:public	signature:(Professor &init)
+~Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	~Professor();$/;"	prototype	line:216	class:Professor	access:public	signature:()
+getTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	bool getTenured()$/;"	function	line:217	class:Professor	access:public	signature:()	returns:bool 
+getDepartment	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Department getDepartment()$/;"	function	line:221	class:Professor	access:public	signature:()	returns:Department 
+setTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	void setTenured(bool ten)$/;"	function	line:226	class:Professor	access:public	signature:(bool ten)	returns:void 
+setDepartment	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	void setDepartment(Department major)$/;"	function	line:230	class:Professor	access:public	signature:(Department major)	returns:void 
+Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Professor :: Professor()$/;"	function	line:236	class:Professor	signature:()	returns:Professor :: 
+Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Professor :: Professor(int identity, string fname, string lname, float money, bool ten, Department major)$/;"	function	line:247	class:Professor	signature:(int identity, string fname, string lname, float money, bool ten, Department major)	returns:Professor :: 
+Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Professor :: Professor(Professor &init)$/;"	function	line:258	class:Professor	signature:(Professor &init)	returns:Professor :: 
+~Professor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^Professor :: ~Professor()$/;"	function	line:269	class:Professor	signature:()	returns:Professor :: 
+instanceof	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^template <class DstType, class SrcType> bool instanceof(const SrcType* src) $/;"	function	line:275	signature:(const SrcType* src)	returns:template bool 
+addNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void addNode(Person* newNode){$/;"	function	line:280	signature:(Person* newNode)	returns:void 
+currentNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* currentNode = headNode; $/;"	local	line:281	type:Person
+setNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	currentNode->setNext(newNode);$/;"	prototype	line:289	signature:(newNode)	returns:currentNode 
+setNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	newNode->setNext(NULL);$/;"	prototype	line:290	signature:(NULL)	returns:newNode 
+insertNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void insertNode(Person* newNode){$/;"	function	line:293	signature:(Person* newNode)	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* list = headNode;$/;"	local	line:294	type:Person
+nextNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person* nextNode = list->getNext();$/;"	local	line:296	type:Person
+setNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			list->setNext(newNode);$/;"	prototype	line:299	signature:(newNode)	returns:list 
+setNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			newNode->setNext(list);$/;"	prototype	line:303	signature:(list)	returns:newNode 
+setNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	list->setNext(newNode);$/;"	prototype	line:309	signature:(newNode)	returns:list 
+setNext	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	newNode->setNext(NULL);$/;"	prototype	line:310	signature:(NULL)	returns:newNode 
+deleteNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void deleteNode(Person* newNode){$/;"	function	line:314	signature:(Person* newNode)	returns:void 
+currentNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* currentNode = headNode;$/;"	local	line:315	type:Person
+prevNode	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* prevNode = NULL;$/;"	local	line:316	type:Person
+menu	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void menu(){$/;"	function	line:336	signature:()	returns:void 
+studentMenu	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void studentMenu(string fi, string la){$/;"	function	line:344	signature:(string fi, string la)	returns:void 
+endl	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	cout << "What would you like to update?" << fi << " " << la << endl;$/;"	local	line:345	type:coutfila
+professorMenu	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void professorMenu(string fi, string la){$/;"	function	line:353	signature:(string fi, string la)	returns:void 
+endl	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	cout << "What would you like to update?" << fi << " " << la << endl;$/;"	local	line:354	type:coutfila
+employeeMenu	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void employeeMenu(string fi, string la){$/;"	function	line:364	signature:(string fi, string la)	returns:void 
+endl	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	cout << "What would you like to update?" << fi << " " << la << endl;$/;"	local	line:365	type:coutfila
+addMenu	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void addMenu(){$/;"	function	line:373	signature:()	returns:void 
+endl	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	cout << "What would you like to add?" << endl;$/;"	local	line:374	type:cout
+readFile	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void readFile(){$/;"	function	line:381	signature:()	returns:void 
+FILE	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	ifstream FILE;$/;"	local	line:382	type:ifstream
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	int giveMeYourID = 0;$/;"	local	line:383
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	string fiName = "";$/;"	local	line:384	type:string
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	string laName = "";$/;"	local	line:385	type:string
+leGrades	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	float leGrades = 0;$/;"	local	line:386
+leMoney	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	float leMoney = 0;$/;"	local	line:387
+leTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	bool leTenured = false;$/;"	local	line:388
+leMajor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Department leMajor = Unknown;$/;"	local	line:389	type:Department
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	int studentNum = 0;$/;"	local	line:390
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string fill = "";$/;"	local	line:398	type:string
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		FILE >> fill;$/;"	local	line:399	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		FILE >> fill;$/;"	local	line:400	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		FILE >> fill;$/;"	local	line:401	type:FILE
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		FILE >> studentNum;$/;"	local	line:402	type:FILE
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		cout << "Number of People: " << studentNum;$/;"	local	line:403	type:cout
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			FILE >> fill;$/;"	local	line:405	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:407	type:FILE
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> giveMeYourID;$/;"	local	line:408	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:409	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:410	type:FILE
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fiName;$/;"	local	line:411	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:412	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:413	type:FILE
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> laName;$/;"	local	line:414	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:415	type:FILE
+leGrades	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> leGrades;$/;"	local	line:416	type:FILE
+std	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Student* std = new Student(giveMeYourID, fiName, laName, leGrades);$/;"	local	line:418	type:Student
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:422	type:FILE
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> giveMeYourID;$/;"	local	line:423	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:424	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:425	type:FILE
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fiName;$/;"	local	line:426	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:427	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:428	type:FILE
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> laName;$/;"	local	line:429	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:430	type:FILE
+leMoney	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> leMoney;$/;"	local	line:431	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:432	type:FILE
+leTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> leTenured;$/;"	local	line:433	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:434	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:435	type:FILE
+prof	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Professor* prof = new Professor(giveMeYourID,  fiName,laName,  leMoney, leTenured, leMajor);$/;"	local	line:458	type:Professor
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:462	type:FILE
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> giveMeYourID;$/;"	local	line:463	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:464	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:465	type:FILE
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fiName;$/;"	local	line:466	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:467	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:468	type:FILE
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> laName;$/;"	local	line:469	type:FILE
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> fill;$/;"	local	line:470	type:FILE
+leMoney	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE >> leMoney;$/;"	local	line:471	type:FILE
+employ	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Employee* employ = new Employee(giveMeYourID, fiName, laName, leMoney);$/;"	local	line:473	type:Employee
+close	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	FILE.close();$/;"	prototype	line:481	signature:()	returns:FILE 
+saving	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void saving(){$/;"	function	line:484	signature:()	returns:void 
+FILE	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	ofstream FILE;$/;"	local	line:485	type:ofstream
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* list = headNode;$/;"	local	line:486	type:Person
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	int studentNum = 0;$/;"	local	line:487
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		FILE << "Number of Student: "<< studentNum;$/;"	local	line:499	type:FILE
+listStudent	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Student* listStudent = (Student*) list;$/;"	local	line:502	type:Student
+getID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nID: " << listStudent->getID();$/;"	prototype	line:504	signature:()	returns:FILE < listStudent 
+getFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nFirst Name: " << listStudent->getFirstName();$/;"	prototype	line:505	signature:()	returns:FILE < listStudent 
+getLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nLast Name: " << listStudent->getLastName();$/;"	prototype	line:506	signature:()	returns:FILE < listStudent 
+getGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nGPA: " << listStudent->getGPA();$/;"	prototype	line:507	signature:()	returns:FILE < listStudent 
+listProfessor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Professor* listProfessor = (Professor*) list;$/;"	local	line:510	type:Professor
+getID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nID: " << listProfessor->getID();$/;"	prototype	line:512	signature:()	returns:FILE < listProfessor 
+getFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nFirst Name: " << listProfessor->getFirstName();$/;"	prototype	line:513	signature:()	returns:FILE < listProfessor 
+getLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nLast Name: " << listProfessor->getLastName();$/;"	prototype	line:514	signature:()	returns:FILE < listProfessor 
+getSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nSalary: " << listProfessor->getSalary();$/;"	prototype	line:515	signature:()	returns:FILE < listProfessor 
+getTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nTenured: " << listProfessor->getTenured();$/;"	prototype	line:516	signature:()	returns:FILE < listProfessor 
+listEmployee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Employee* listEmployee = (Employee*) list;$/;"	local	line:540	type:Employee
+getID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nID: " << listEmployee->getID();$/;"	prototype	line:542	signature:()	returns:FILE < listEmployee 
+getFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nFirst Name: " << listEmployee->getFirstName();$/;"	prototype	line:543	signature:()	returns:FILE < listEmployee 
+getLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nLast Name: " << listEmployee->getLastName();$/;"	prototype	line:544	signature:()	returns:FILE < listEmployee 
+getSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				FILE << "\\nSalary: " << listEmployee->getSalary();$/;"	prototype	line:545	signature:()	returns:FILE < listEmployee 
+close	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	FILE.close();$/;"	prototype	line:551	signature:()	returns:FILE 
+listPeople	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void listPeople(){$/;"	function	line:553	signature:()	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* list = headNode;$/;"	local	line:554	type:Person
+stulist	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			Student* stulist = (Student*) list;$/;"	local	line:559	type:Student
+getID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nID: " << stulist->getID();$/;"	prototype	line:561	signature:()	returns:cout < stulist 
+getFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nFirst Name: " << stulist->getFirstName();$/;"	prototype	line:562	signature:()	returns:cout < stulist 
+getLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nLast Name: " << stulist->getLastName();$/;"	prototype	line:563	signature:()	returns:cout < stulist 
+getGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nGPA: " << stulist->getGPA();$/;"	prototype	line:564	signature:()	returns:cout < stulist 
+profList	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			Professor* profList = (Professor*) list;$/;"	local	line:568	type:Professor
+getID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nID: " << profList->getID();$/;"	prototype	line:570	signature:()	returns:cout < profList 
+getFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nFirst Name: " << profList->getFirstName();$/;"	prototype	line:571	signature:()	returns:cout < profList 
+getLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nLast Name: " << profList->getLastName();$/;"	prototype	line:572	signature:()	returns:cout < profList 
+getSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nSalary: " << profList->getSalary();$/;"	prototype	line:573	signature:()	returns:cout < profList 
+getTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			profList->getTenured();$/;"	prototype	line:582	signature:()	returns:profList 
+listEmployee	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			Employee* listEmployee = (Employee*) list;$/;"	local	line:614	type:Employee
+getID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nID: " << listEmployee->getID();$/;"	prototype	line:616	signature:()	returns:cout < listEmployee 
+getFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nFirst Name: " << listEmployee->getFirstName();$/;"	prototype	line:617	signature:()	returns:cout < listEmployee 
+getLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nLast Name: " << listEmployee->getLastName();$/;"	prototype	line:618	signature:()	returns:cout < listEmployee 
+getSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			cout << "\\nSalary: " << listEmployee->getSalary();$/;"	prototype	line:619	signature:()	returns:cout < listEmployee 
+addingPeople	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void addingPeople(){$/;"	function	line:625	signature:()	returns:void 
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	int options = 0;$/;"	local	line:626
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		int giveMeYourID = 0;$/;"	local	line:628
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string fiName = "";$/;"	local	line:629	type:string
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string laName = "";$/;"	local	line:630	type:string
+leGrades	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		float leGrades = 0;$/;"	local	line:631
+leMoney	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		float leMoney = 0;$/;"	local	line:632
+leTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		bool leTenured = false;$/;"	local	line:633
+leMajor	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Department leMajor = Unknown;$/;"	local	line:634	type:Department
+studentNum	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		int studentNum = 0; $/;"	local	line:635
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		string fill = "";$/;"	local	line:636	type:string
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		Person* list = headNode;$/;"	local	line:637	type:Person
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		cin >> options;$/;"	local	line:640	type:cin
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> giveMeYourID;$/;"	local	line:645	type:cin
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> fiName;$/;"	local	line:647	type:cin
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> laName;$/;"	local	line:649	type:cin
+leGrades	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> leGrades;$/;"	local	line:651	type:cin
+adder	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Person* adder = new Student(giveMeYourID, fiName, laName, leGrades);$/;"	local	line:652	type:Person
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> giveMeYourID;$/;"	local	line:658	type:cin
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> fiName;$/;"	local	line:660	type:cin
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> laName;$/;"	local	line:662	type:cin
+leMoney	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> leMoney;$/;"	local	line:664	type:cin
+leTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> leTenured;$/;"	local	line:666	type:cin
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> fill;$/;"	local	line:668	type:cin
+adder	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Person* adder = new Professor(giveMeYourID,  fiName,  laName,  leMoney,  leTenured,  leMajor);$/;"	local	line:691	type:Person
+giveMeYourID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> giveMeYourID;$/;"	local	line:697	type:cin
+fiName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> fiName;$/;"	local	line:699	type:cin
+laName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> laName;$/;"	local	line:701	type:cin
+leMoney	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> leMoney;$/;"	local	line:703	type:cin
+adder	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				Person* adder = new Employee( giveMeYourID,  fiName,  laName,  leMoney);$/;"	local	line:705	type:Person
+removePerson	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void removePerson(int id){$/;"	function	line:716	signature:(int id)	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* list = headNode;$/;"	local	line:717	type:Person
+fname	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			string fname = list->getFirstName();$/;"	local	line:720	type:string
+lname	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^			string lname = list->getLastName();$/;"	local	line:721	type:string
+updatePerson	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^void updatePerson(int id){$/;"	function	line:731	signature:(int id)	returns:void 
+list	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	Person* list = headNode;$/;"	local	line:732	type:Person
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	int options = 0;$/;"	local	line:733
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					cin >> options;$/;"	local	line:740	type:cin
+nextID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					int nextID, prevID = 0;$/;"	local	line:742
+prevID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					int nextID, prevID = 0;$/;"	local	line:742
+nextFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string nextFirstName,nextLastName ="";$/;"	local	line:743	type:string
+nextLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string nextFirstName,nextLastName ="";$/;"	local	line:743
+nextGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					float nextGPA, prevGPA = 0;$/;"	local	line:744
+prevGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					float nextGPA, prevGPA = 0;$/;"	local	line:744
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string fill = "";$/;"	local	line:745	type:string
+updateList	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					Student* updateList = (Student*)list;$/;"	local	line:746	type:Student
+nextID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextID;$/;"	local	line:751	type:cin
+setID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateList->setID(nextID);$/;"	prototype	line:752	signature:(nextID)	returns:updateList 
+nextFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextFirstName;$/;"	local	line:757	type:cin
+setFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateList->setFirstName(nextFirstName);$/;"	prototype	line:758	signature:(nextFirstName)	returns:updateList 
+nextLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextLastName;$/;"	local	line:763	type:cin
+setLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateList->setLastName(nextLastName);$/;"	prototype	line:764	signature:(nextLastName)	returns:updateList 
+nextGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextGPA;$/;"	local	line:769	type:cin
+setGPA	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateList -> setGPA(nextGPA);$/;"	prototype	line:770	signature:(nextGPA)	returns:updateList 
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					cin >> options;$/;"	local	line:783	type:cin
+nextID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					int nextID, prevID = 0;$/;"	local	line:785
+prevID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					int nextID, prevID = 0;$/;"	local	line:785
+nextFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string nextFirstName,nextLastName ="";$/;"	local	line:786	type:string
+nextLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string nextFirstName,nextLastName ="";$/;"	local	line:786
+nextSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					float nextSalary = 0;$/;"	local	line:787
+nextTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					float nextTenured = false;$/;"	local	line:788
+nextDepartment	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					Department nextDepartment;$/;"	local	line:789	type:Department
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string fill = "";$/;"	local	line:790	type:string
+updateProfList	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					Professor* updateProfList = (Professor*)list;$/;"	local	line:791	type:Professor
+nextID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextID;$/;"	local	line:796	type:cin
+setID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateProfList->setID(nextID);$/;"	prototype	line:797	signature:(nextID)	returns:updateProfList 
+nextFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextFirstName;$/;"	local	line:802	type:cin
+setFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateProfList->setFirstName(nextFirstName);$/;"	prototype	line:803	signature:(nextFirstName)	returns:updateProfList 
+nextLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextLastName;$/;"	local	line:808	type:cin
+setLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateProfList->setLastName(nextLastName);$/;"	prototype	line:809	signature:(nextLastName)	returns:updateProfList 
+nextSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextSalary;$/;"	local	line:814	type:cin
+setSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateProfList -> setSalary(nextSalary);$/;"	prototype	line:815	signature:(nextSalary)	returns:updateProfList 
+nextTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextTenured;$/;"	local	line:819	type:cin
+setTenured	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateProfList -> setTenured(nextTenured);$/;"	prototype	line:820	signature:(nextTenured)	returns:updateProfList 
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> fill;$/;"	local	line:825	type:cin
+setDepartment	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateProfList->setDepartment(nextDepartment);$/;"	prototype	line:848	signature:(nextDepartment)	returns:updateProfList 
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					cin >> options;$/;"	local	line:862	type:cin
+nextID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					int nextID, prevID = 0;$/;"	local	line:864
+prevID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					int nextID, prevID = 0;$/;"	local	line:864
+nextFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string nextFirstName,nextLastName ="";$/;"	local	line:865	type:string
+nextLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string nextFirstName,nextLastName ="";$/;"	local	line:865
+nextSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					float nextSalary = 0;$/;"	local	line:866
+fill	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					string fill = "";$/;"	local	line:867	type:string
+updateEmployeeList	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^					Employee* updateEmployeeList = (Employee*)list;$/;"	local	line:868	type:Employee
+nextID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextID;$/;"	local	line:873	type:cin
+setID	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateEmployeeList->setID(nextID);$/;"	prototype	line:874	signature:(nextID)	returns:updateEmployeeList 
+nextFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextFirstName;$/;"	local	line:879	type:cin
+setFirstName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateEmployeeList->setFirstName(nextFirstName);$/;"	prototype	line:880	signature:(nextFirstName)	returns:updateEmployeeList 
+nextLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextLastName;$/;"	local	line:885	type:cin
+setLastName	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateEmployeeList->setLastName(nextLastName);$/;"	prototype	line:886	signature:(nextLastName)	returns:updateEmployeeList 
+nextSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							cin >> nextSalary;$/;"	local	line:891	type:cin
+setSalary	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^							updateEmployeeList -> setSalary(nextSalary);$/;"	prototype	line:892	signature:(nextSalary)	returns:updateEmployeeList 
+main	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^int main(){$/;"	function	line:906	signature:()	returns:int 
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	int options = 0;$/;"	local	line:907
+id	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^	int id = 0;$/;"	local	line:908
+options	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^		cin >> options;$/;"	local	line:913	type:cin
+id	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> id;$/;"	local	line:923	type:cin
+id	C:\Users\cheun\Documents\ECEGR2020\Lab_7\main.cpp	/^				cin >> id;$/;"	local	line:928	type:cin
